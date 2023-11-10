@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:italic,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caveat:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300italic,500italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,600,700&display=swap");
+
+/* @import url("fonts.css"); */
+
+@import url("reset.css");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.44;
+	color: #7d7d7d;
+}
+
+.main {
+  padding: 10px;
+}
+
+.main > * {
+  margin: 0 auto;
+}
+
+.main > :not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.article-one__title {
+  margin-bottom: 20px;
+
+	font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: -5px -5px 3px yellow;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  white-space: nowrap;
+}
+
+.article-one__paragraphs > p {
+  text-align: justify;
+  text-shadow: 1px 1px 3px yellow;
+  text-indent: 25px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+.article-one__paragraphs > p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.article-one__paragraphs > p:nth-child(1) {
+  text-transform: capitalize;
+}
+
+.article-one__paragraphs > p:nth-child(2) {
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.article-one__paragraphs > p:nth-child(3) {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.article-one__paragraphs > p:nth-child(4) {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  text-decoration: overline;
+}
+
+.article-one__paragraphs > p:nth-child(5) {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.article-one__paragraphs > p:nth-child(6) {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.article {
+  width: 830px;
+  font-family: "Inter", sans-serif;
+  font-style: normal; 
+}
+
+.article__part:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.article__title {
+  margin-bottom: 12px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.26;
+  color: #37393F;
+}
+
+.article__title--s {
+  font-size: 20px;
+  line-height: 1.25;
+  color: #6B77E5;
+}
+
+.article__title--l {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.article__paragraphs:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.article__paragraphs > :not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.article__list {
+  margin-left: 25px;
+}
+
+.article__list-item {
+  list-style: inside;
+}
+
+.article__list-item--num {
+  list-style: decimal-leading-zero inside;
+}
+
+.article__list-item:not(:last-child) {
+  margin-bottom: 25px;
+}
