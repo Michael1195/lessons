@@ -106,19 +106,19 @@ body {
   margin-bottom: 30px;
 }
 
-.article-one__item {
-  font-size: 18px;
-  line-height: normal;
-}
-
 .article-one__item::before {
-  content: url("/img/vector.svg");
-  margin-right: 8px;
+  content: url("../img/vector.svg");
   display: inline-block;
   width: 27px;
-  height: 27px;
+  height: 28px;
+  margin-right: 8px;
   vertical-align: middle;
-  font-size: 0;
+}
+
+.article-one__item-span {
+  font-size: 18px;
+  line-height: normal;
+  vertical-align: middle;
 }
 
 .article-two  {
