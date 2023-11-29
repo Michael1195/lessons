@@ -24,7 +24,10 @@ body {
 .article--gap {
   max-width: 1220px;
   padding: 150px 0;
-  text-align: center;
+}
+
+.article--gap > * {
+  margin: 0 auto;
 }
 
 .article__subtitle {
@@ -41,6 +44,12 @@ body {
 
 .article__subtitle--gap {
   margin-bottom: 14px;
+}
+
+.article__title-container {
+  max-width: 852px;
+  margin-bottom: 47px;
+  text-align: center;
 }
 
 .article__title {
@@ -93,7 +102,7 @@ body {
 
 .article__card {
   display: inline-block;
-  width: 295px;
+  max-width: 295px;
   padding: 32px;
   border: 1px solid #E3E3E3;
 }
@@ -104,11 +113,14 @@ body {
 
 .article__card-content {
   padding-left: 58px;
-  background: url("../img/icon-1.svg") no-repeat;
 }
 
-.article__card-content--icon {
-  background: url("../img/icon-2.svg") no-repeat;
+.article__card-content--icon-1 {
+  background: url("../img/icon-1.svg") left top / 42px 42px no-repeat;
+}
+
+.article__card-content--icon-2 {
+  background: url("../img/icon-2.svg") left top / 42px 42px no-repeat;
 }
 
 .article__card-title {
@@ -143,14 +155,8 @@ body {
   background-color: #4354e6;
 }
 
-.article__description {
-  width: 852px;
-  margin: 0 auto 47px;
-}
-
 .article__projects {
   font-size: 0;
-  text-align: left;
 }
 
 .article__projects > :not(:nth-last-child(-n + 3)) {
@@ -163,8 +169,17 @@ body {
 
 .article__project {
   display: inline-block;
-  width: 384px;
-  padding-top: 525px;
+  width: 100%;
+  max-width: 384px;
+}
+
+.article__project > :last-child {
+  margin-bottom: 0;
+}
+
+.article__project-photo {
+  height: 501px;
+  margin-bottom: 24px;
 }
 
 .article__project-title {
@@ -175,6 +190,7 @@ body {
 .article__project-date {
   display: inline-block;
   min-height: 22px;
+  margin-bottom: 10px;
   padding-left: 25px;
 
   background: url("../img/date-icon.svg") no-repeat;
@@ -182,28 +198,28 @@ body {
   line-height: 1.57;
 }
 
-.article__project--photo-1 {
-  background: url("../img/photo-1.png") no-repeat;
+.article__project-photo--1 {
+  background: #C4C4C4 url("../img/photo-1.png") center / cover no-repeat;
 }
 
-.article__project--photo-2 {
-  background: url("../img/photo-2.png") no-repeat;
+.article__project-photo--2 {
+  background: #C4C4C4 url("../img/photo-2.png") center / cover no-repeat;
 }
 
-.article__project--photo-3 {
-  background: url("../img/photo-3.png") no-repeat;
+.article__project-photo--3 {
+  background: #C4C4C4 url("../img/photo-3.png") center / cover no-repeat;
 }
 
-.article__project--photo-4 {
-  background: url("../img/photo-4.png") no-repeat;
+.article__project-photo--4 {
+  background: #C4C4C4 url("../img/photo-4.png") center / cover no-repeat;
 }
 
-.article__project--photo-5 {
-  background: url("../img/photo-5.png") no-repeat;
+.article__project-photo--5 {
+  background: #C4C4C4 url("../img/photo-5.png") center / cover no-repeat;
 }
 
-.article__project--photo-6 {
-  background: url("../img/photo-6.png") no-repeat;
+.article__project-photo--6 {
+  background: #C4C4C4 url("../img/photo-6.png") center / cover no-repeat;
 }
 
 .article-third {
@@ -262,22 +278,50 @@ body {
 }
 
 .article-fourth {
-  width: 1240px;
-  height: 640px;
-  padding: 180px 74px 0;
+  max-width: 1240px;
   
-  background: url("../img/bg-1.png") no-repeat,
-              url("../img/bg-2.png") right no-repeat;
   font-family: "Causten", sans-serif;
-  font-size: 20px;
+  font-size: 0;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 1px; 
   color: #FFF;
+
+}
+
+.article-fourth__image {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  min-height: 640px;
+  padding: 183px 15px 157px;
+  font-size: 20px;
+}
+
+.article-fourth__image > * {
+  margin: 0 auto;
+}
+
+.article-fourth__image--1 {
+  max-width: 614px;
+  background: url("../img/bg-1.png") center / cover no-repeat;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+.article-fourth__image--2 {
+  max-width: 625px;
+  background: url("../img/bg-2.png") center / cover no-repeat;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
 
 .article-fourth__content {
-  width: 466px;
+  max-width: 466px;
+}
+
+.article-fourth__content > :last-child {
+  margin-bottom: 0;
 }
 
 .article-fourth__title {
@@ -296,7 +340,9 @@ body {
 }
 
 .article-fourth__link {
+  display: inline-block;
   padding: 12px 44px;
+  margin-bottom: 40px;
 
   background-color: #FFF;
   font-size: 18px;
