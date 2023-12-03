@@ -36,22 +36,25 @@ body {
   max-width: 673px;
 }
 
+.article--two > :not(:last-child) {
+  margin-bottom: 48px;
+}
+
 .article--three {
   max-width: 1220px;
   padding: 150px 0 138px;
   text-align: center;
 }
 
-.article--two > :not(:last-child) {
-  margin-bottom: 48px;
+.article__part > * {
+  margin-bottom: 16px;
 }
 
-.article--three > :not(:last-child) {
-  margin-bottom: 77px;
+.article__part > :last-child {
+  margin-bottom: 0;
 }
 
 .article__image-container {
-  width: 100%;
   max-width: 692px;
   height: 454px;
   margin-bottom: 37px;
@@ -112,7 +115,6 @@ body {
 
 .article__title--three {
   max-width: 100%;
-  margin-bottom: 0;
 }
 
 .article__title--subtitle {
@@ -136,10 +138,6 @@ body {
   color: #40DDB6;
 }
 
-.article__paragraphs:not(:last-child) {
-  margin-bottom: 35px;
-}
-
 .article__paragraphs > :not(:last-child) {
   margin-bottom: 25px;
 }
@@ -152,7 +150,7 @@ body {
   margin-right: 29px;
 }
 
-.article__image-two-container {
+.article__image-container-benefits {
   display: inline-block;
   width: 100%;
   max-width: 331px;
@@ -237,6 +235,7 @@ body {
 .article__card {
   display: inline-block;
   max-width: 386px;
+  margin-top: 36px;
   padding: 0 43px 58px;
   background-color: #F4F4F4;
   font-size: 18px;
@@ -291,9 +290,13 @@ body {
   color: #000;
 }
 
+.article-fourth > :not(:last-child) {
+  margin-right: 20px;
+}
+
 .article-fourth__title {
   display: inline-block;
-  max-width: 481px;
+  max-width: 461px;
   padding-top: 150px;
 
   font-size: 60px;
@@ -305,7 +308,7 @@ body {
 .article-fourth__title::after {
   content: "";
   display: block;
-  width: 63%;
+  width: 66%;
   height: 3px;
   margin-top: 11px;
   background-color: #78473B;
@@ -321,9 +324,14 @@ body {
 
 .article-fourth__card {
   display: inline-block;
+  width: 100%;
   max-width: 334px;
   font-size: 24px;
   vertical-align: top;
+}
+
+.article-fourth__card:hover > .article-fourth__image-container {
+  box-shadow: -9px -9px 9px 0 #c4c4c4;
 }
 
 .article-fourth__card--gap {
@@ -353,6 +361,7 @@ body {
   height: 381px;
   margin-bottom: 34px;
   border: 1px solid #000;
+  transition: 0.3s;
 }
 
 .article-fourth__image {
