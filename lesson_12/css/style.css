@@ -68,6 +68,7 @@ body {
 
 .menu__item:hover > .menu__link .arrow {
 	stroke: goldenrod;
+	transition: 0.3s;
 }
 
 .menu__item:hover > .sub-menu {
@@ -90,7 +91,6 @@ body {
 	height: 7px;
 	stroke: #37393F;
 	transform: translateY(-50%);
-	transition: 0.3s;
 }
 
 .arrow--right {
@@ -125,6 +125,7 @@ body {
 
 .sub-menu__item:hover > .sub-menu__link .arrow {
 	stroke: goldenrod;
+	transition: 0.3s;
 }
 
 .sub-menu__item:hover > .sub-menu {
@@ -209,7 +210,7 @@ body {
 
 .experts__description {
 	position: relative;
-	padding: 24px 0;
+	padding: 24px 10px;
 	text-transform: capitalize;
 	background-color: #fff;
 	z-index: 2;
@@ -266,6 +267,7 @@ body {
 .experts__link-social > img {
 	width: 100%;
 	height: 100%;
+	border-radius: 50%;
 }
 
 .box {
